@@ -1,7 +1,23 @@
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    // const getClients = async () => {
+    //   const clients = await window.electronAPI.getAllClients();
+    //   console.log('clients: ', clients);
+    // }
+    // getClients();
+    window.electronAPI.getAllClients()
+    .then((clients) => {
+      console.log(clients);
+    })
+    .catch((error) => {
+      console.error('Error fetching clients:', error);
+    });
+  }, []);
+  
   return (
     <div className="App">
       <header className="App-header">
