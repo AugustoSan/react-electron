@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from '@mui/material';
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const App = () => {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Button variant="contained">Contained</Button>
         <a
           className="App-link"
           href="https://reactjs.org"
