@@ -1,7 +1,28 @@
 import React, { useEffect } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { Button } from '@mui/material';
+import { Box, Container, Link, Typography } from '@mui/material';
+import ProTip from './ProTip';
+import DashboardLayoutBranding from './DashboardPage';
+
+function Copyright() {
+  return (
+    <Typography
+      variant="body2"
+      align="center"
+      sx={{
+        color: 'text.secondary',
+      }}
+    >
+      {'Copyright © '}
+      <Link color="inherit" href="https://mui.com/">
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const App = () => {
   useEffect(() => {
@@ -20,23 +41,16 @@ const App = () => {
   }, []);
   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button variant="contained">Contained</Button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="sm">
+      <Box sx={{ my: 4 }}>
+        {/* <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
+          Material UI Create React App example
+        </Typography> */}
+        {/* <ProTip /> */}
+        <DashboardLayoutBranding />
+        {/* <Copyright /> */}
+      </Box>
+    </Container>
   );
 }
 
