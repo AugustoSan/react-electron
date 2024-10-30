@@ -16,6 +16,8 @@ function createWindow() {
   });
 
   mainWindow.loadURL('http://localhost:3000');
+  // Abre las herramientas de desarrollador
+  mainWindow.webContents.openDevTools();
   mainWindow.on('closed', () => (mainWindow = null));
 }
 
