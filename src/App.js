@@ -4,26 +4,6 @@ import './App.css';
 import { Box, Container } from '@mui/material';
 // import ProTip from './ProTip';
 import ResponsiveAppBar from './components/AppBar';
-// import DashboardLayoutBranding from './DashboardPage';
-
-// function Copyright() {
-//   return (
-//     <Typography
-//       variant="body2"
-//       align="center"
-//       sx={{
-//         color: 'text.secondary',
-//       }}
-//     >
-//       {'Copyright © '}
-//       <Link color="inherit" href="https://mui.com/">
-//         Your Website
-//       </Link>{' '}
-//       {new Date().getFullYear()}
-//       {'.'}
-//     </Typography>
-//   );
-// }
 
 const App = () => {
   useEffect(() => {

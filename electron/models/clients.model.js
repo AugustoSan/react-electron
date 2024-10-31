@@ -1,4 +1,4 @@
-const { getClientDB } = require("./conection");
+const { getClientDB } = require("../database/conection");
 
 const findAddressByIDClient = async (id) => {
     const client = await getClientDB();
